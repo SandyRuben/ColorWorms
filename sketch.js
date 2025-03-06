@@ -116,7 +116,7 @@ class Node {
   show() {
     fill(this.fillColor);
     rect(this.location.x, this.location.y, 5);
-  }
+  } 
   
   randomColor() {
     this.fillColor = color(random(255), random(255), random(255));
