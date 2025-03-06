@@ -8,7 +8,7 @@ let mouseMode = 0;
 
 function setup() {
   colorMode(HSB);
-  createCanvas(600, 800);
+  createCanvas(windowWidth, windowHeight);
   for (let i = 0; i < numNodes; i++) {
     nodes[i] = new Node();
   }
@@ -121,4 +121,8 @@ class Node {
   randomColor() {
     this.fillColor = color(random(255), random(255), random(255));
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
